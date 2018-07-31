@@ -59,6 +59,12 @@ If you have special credentials for your repository you might want to try the se
 </settings>
 ```
 
+Remember that the credentials above can be encrypted using the maven master password encryption function shown below.
+
+```
+mvn --encrypt-master-password <password>
+```
+
 Lastly I add this little command so you can see which image you have in our setup and clean up with prune when your done. Notice that that command will remove all images in your environment so DO NOT RUN in production.
 ```
 docker images
